@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+  display: flex; /* center content */
+  justify-content: center; /* centers the content horizontally */
+  height: 100vh; /* makes sure images stays the screen height */
+  object-fit: cover; /* makes sure image scales properly (doesnt distort)*/
+  overflow: hidden; /* prevents any overflow past the hero container */
+}
+
+.hero-image {
+  position: absolute;
+  z-index: -1; /* makes sure image stays in the background */
+  width: 100%; /* makes sure images stays the screen width */
+  height: 100vh; /* makes sure images stays the screen height */
+  object-fit: cover; /* makes sure image scales properly (doesnt distort)*/
+}
+
+.hero section {
+  z-index: 1; /* makes sure section stays above the background image */
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5% 10%;
+  text-align: center;
+  border-radius: 500px 500px 5px 5px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center the content */
+  align-items: center; /* horizontally center the content */
+  max-height: calc(
+    100vh - 60px
+  ); /* makes sure the section height fits inside the viewport */
+  box-sizing: border-box; /* makes sure padding and margin are inside the element's box model */
+}
+
+.hero-heading-container {
+  position: relative;
+}
+
+.hero-heading-typography {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.hero-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%; /* makes sure the button container takes up the full width */
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 6px 60px;
+  margin: 5px 0;
+  font-size: 15px;
+  letter-spacing: 5px;
+  border-radius: 9px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 600px; /* matches the width of hero-heading-typography */
+}
+
+.hero-button-container .btn {
+  width: 100%; /* makes sure the button width is responsive */
+  max-width: 600px; /* matches the width of .hero-heading-typography */
+}
+
+.btn:hover {
+  background-color: #aeb0a4;
+  color: white;
+}
+@keyframes glideIn {
+  0% {
+    transform: translateY(50px); /* Start from below the screen */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    transform: translateY(0); /* End at the original position */
+    opacity: 1; /* Fade in */
+  }
+}
+
+/* Apply the glide-in effect to buttons */
+.hero-button-container .btn {
+  width: 100%;
+  max-width: 600px;
+  animation: glideIn 1s ease-out forwards; /* Apply the animation */
+  animation-delay: 0.3s; /* Optional: add a slight delay for the animation to start */
+}
+
+/* Optional: Add a delay between buttons */
+.hero-button-container .btn:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.hero-button-container .btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.hero-button-container .btn:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.hero-button-container .btn:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.hero-button-container .btn:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.hero-button-container .btn:nth-child(6) {
+  animation-delay: 0.7s;
+}
