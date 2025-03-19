@@ -3,9 +3,13 @@
   --primary-font: 'GFS Didot', serif; /* Primary font */
   --background-color: #f8f9fa; /* Background color for the page */
   --button-bg: white; /* Default button background */
-  --button-hover-bg: #aeb0a4; /* Button background on hover */
+  --button-hover-bg: #bfb8b3; /* Button background on hover */
   --button-text: black; /* Default button text color */
   --button-hover-text: white; /* Button text color on hover */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Apply global styles to the body */
@@ -40,16 +44,14 @@ body {
   text-align: center; /* Center align text */
   border-radius: 500px 500px 5px 5px; /* Apply rounded corners */
   max-width: 700px; /* Restrict maximum width */
-  width: 90%; /* Make it responsive */
+  width: 85%; /* Make it responsive */
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
-/* Container for the heading */
 .hero-heading-container {
   position: relative;
 }
 
-/* Heading typography settings */
 .hero-heading-typography {
   position: relative;
   width: 90%; /* Make responsive */
@@ -57,7 +59,6 @@ body {
   margin-top: 50px; /* Provide spacing from top */
 }
 
-/* Container for hero buttons */
 .hero-button-container {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack buttons vertically */
@@ -65,8 +66,11 @@ body {
   margin: 20px 0; /* Add space around the container */
   width: 100%; /* Ensure full width */
 }
+a {
+  width: 100%; /* Make responsive */
+  max-width: 600px; /* Set maximum width */
+}
 
-/* General button styles */
 .btn {
   background-color: var(--button-bg); /* Default button color */
   font-family: var(--primary-font); /* Use the defined font */
@@ -84,59 +88,150 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
-/* Button hover effect */
 .btn:hover {
   background-color: var(--button-hover-bg); /* Change background on hover */
   color: var(--button-hover-text); /* Change text color on hover */
 }
 
-/* Button focus effect for accessibility */
 .btn:focus {
   outline: 3px solid var(--button-hover-bg); /* Add focus outline */
+  background-color: var(--button-hover-bg);
+  color: white;
 }
 
-/* Keyframe animation for glide-in effect */
-@keyframes glideIn {
-  0% {
-    transform: translateY(50px); /* Start from below */
-    opacity: 0; /* Start with opacity 0 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  100% {
-    transform: translateY(0); /* End at normal position */
-    opacity: 1; /* Fully visible */
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Apply animation to buttons */
-.hero-button-container .btn {
-  animation: glideIn 1s ease-out forwards; /* Apply animation */
+.hero-button-container a {
+  opacity: 0; /* Hide initially */
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
-/* Apply incremental delays to buttons for a smooth effect */
-.hero-button-container .btn:nth-child(2) {
+/* Staggered delays */
+.hero-button-container a:nth-child(2) {
   animation-delay: 0.2s;
 }
-.hero-button-container .btn:nth-child(3) {
+.hero-button-container a:nth-child(3) {
   animation-delay: 0.3s;
 }
-.hero-button-container .btn:nth-child(4) {
+.hero-button-container a:nth-child(4) {
   animation-delay: 0.4s;
 }
-.hero-button-container .btn:nth-child(5) {
+.hero-button-container a:nth-child(5) {
   animation-delay: 0.5s;
 }
-.hero-button-container .btn:nth-child(6) {
+.hero-button-container a:nth-child(6) {
   animation-delay: 0.6s;
 }
-.hero-button-container .btn:nth-child(7) {
+.hero-button-container a:nth-child(7) {
   animation-delay: 0.7s;
 }
+.hero-button-container a:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.hero-button-container a:nth-child(9) {
+  animation-delay: 0.9s;
+}
 
-/* Travel itinerary text styles */
-.travel-itinerary {
+.hero-travel-itinerary-heading {
   text-align: center; /* Center align text */
   font-size: 20px; /* Set font size */
   letter-spacing: 5px; /* Increase letter spacing */
+}
+
+/* Day 1 section styles */
+.day-1-section {
+  position: relative; /* Keep it in normal flow */
+  margin-top: 100vh; /* Push it below the full height of the viewport */
+  z-index: 1; /* Ensure it's above the background image */
+  background-color: #e7e1dd;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* 100% of the viewport height */
+}
+
+.day-2-section {
+  position: relative; /* Keep it in normal flow */
+  z-index: 1; /* Ensure it's above the background image */
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* 100% of the viewport height */
+}
+
+.day-3-section {
+  position: relative; /* Keep it in normal flow */
+  z-index: 1; /* Ensure it's above the background image */
+  background-color: #e7e1dd;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* 100% of the viewport height */
+}
+
+.itinerary-heading {
+  font-size: 75px;
+  padding: 0;
+  margin: 30px 0 0 0;
+  line-height: 60px;
+}
+
+.itinerary-date {
+  font-size: 25px;
+  letter-spacing: 10px;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
+hr {
+  max-width: 690px;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.itinerary-1 {
+  border: 0.5px solid black;
+  background-color: white;
+  text-align: left;
+  display: block;
+  margin: 20px auto;
+  line-height: 30px;
+  border-radius: 9px;
+  padding: 20px;
+  max-width: 650px;
+}
+.itinerary-2 {
+  border: 0.5px solid black;
+  background-color: #e7e1dd;
+  text-align: left;
+  display: block;
+  margin: 20px auto;
+  line-height: 30px;
+  border-radius: 9px;
+  padding: 20px;
+  max-width: 650px;
+}
+
+i {
+  letter-spacing: 10px;
+}
+
+a {
+  color: black;
 }
 
 /* Responsive adjustments for smaller screens */
