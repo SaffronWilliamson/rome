@@ -254,4 +254,7 @@ a {
     font-size: 12px;
     line-height: 22px;
   }
+  .itinerary-heading {
+    margin-top: 0;
+  }
 }
