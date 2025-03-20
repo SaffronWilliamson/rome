@@ -141,6 +141,17 @@ a {
   animation-delay: 0.9s;
 }
 
+.fa-arrow-up {
+  font-size: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+.top {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
 .hero-travel-itinerary-heading {
   text-align: center; /* Center align text */
   font-size: 20px; /* Set font size */
