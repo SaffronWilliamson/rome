@@ -90,6 +90,7 @@ main {
 
 .weather-app-city {
   margin-top: 10px;
+  margin-bottom: 0;
   font-size: 50px;
   line-height: 48px;
 }
@@ -97,6 +98,10 @@ main {
 .weather-app-temp-container {
   display: flex;
   margin-top: 15px;
+}
+
+.location-and-info {
+  margin-bottom: 30px;
 }
 
 .weather-app-icon {
@@ -182,6 +187,10 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .location-and-info {
+    margin-bottom: 0px;
   }
 
   .weather-app-temp-container {

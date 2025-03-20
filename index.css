@@ -141,6 +141,13 @@ a {
   animation-delay: 0.9s;
 }
 
+
+.hero-travel-itinerary-heading {
+  text-align: center; /* Center align text */
+  font-size: 20px; /* Set font size */
+  letter-spacing: 5px; /* Increase letter spacing */
+}
+
 .fa-arrow-up {
   font-size: 30px;
   margin-bottom: 10px;
@@ -151,12 +158,6 @@ a {
 .top {
   font-size: 10px;
   padding-top: 5px;
-}
-
-.hero-travel-itinerary-heading {
-  text-align: center; /* Center align text */
-  font-size: 20px; /* Set font size */
-  letter-spacing: 5px; /* Increase letter spacing */
 }
 
 /* Day 1 section styles */
@@ -180,7 +181,7 @@ a {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
-  height: 100vh; /* 100% of the viewport height */
+  height:100vh; /* 100% of the viewport height */
 }
 
 .day-3-section {
@@ -238,22 +239,24 @@ hr {
   background-color: white;
   text-align: left;
   display: block;
-  margin: 20px auto;
+  margin: 15px auto;
   line-height: 30px;
   border-radius: 9px;
-  padding: 20px;
+  padding: 15px;
   max-width: 650px;
+  font-size: 15px;
 }
 .itinerary-2 {
   border: 0.5px solid black;
   background-color: #e7e1dd;
-  text-align: left;
+   text-align: left;
   display: block;
-  margin: 20px auto;
+  margin: 15px auto;
   line-height: 30px;
   border-radius: 9px;
-  padding: 20px;
+  padding: 15px;
   max-width: 650px;
+  font-size: 15px;
 }
 
 i {
@@ -262,6 +265,61 @@ i {
 
 a {
   color: black;
+}
+
+.useful-phrases {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.language {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 8px;
+}
+
+.useful-phrases-heading {
+  font-size: 75px;
+  text-align: center;
+  margin: 100px 30px 0px 30px;
+}
+
+.useful-phrases-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin: 90px 30px 20px 30px;
+  border-bottom: 1px solid black;
+}
+
+
+.phrase {
+  margin: 10px 30px 30px 30px;
+  font-size: 30px;
+}
+
+.phrase span {
+  font-size: 20px;
+}
+
+.phrase em {
+  color: #bfb8b3;
+}
+.phrase p {
+  font-size: 20px;
+  margin: 0;
+}
+
+footer {
+  font-size: 10px;
+  margin-top: 90px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -289,7 +347,30 @@ a {
   }
   .itinerary-content {
     display: inline-block;
-    position: relative; 
+    position: relative;
     top: -30px;
+  }
+
+  .useful-phrases-heading {
+    font-size: 35px;
+  }
+  .useful-phrases-title {
+    font-size: 25px;
+  }
+  .phrase {
+    margin: 10px 30px 30px 30px;
+    font-size: 20px;
+  }
+
+  .phrase span {
+    font-size: 16px;
+  }
+
+  .phrase em {
+    color: #bfb8b3;
+  }
+  .phrase p {
+    font-size: 16px;
+    margin: 0;
   }
 }
