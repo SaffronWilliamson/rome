@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./worldClock.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
+     <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8cf076e0a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="return-home">
+        <a href="./index.html"><i class="fa-solid fa-house fa-bounce"></i></a>
+      </div>
+        <section class="world-clock">
+      <h1>World Clock</h1>
+
+      <div id="cities">
+        <div class="city" id="london">
+          <div>
+            <h2>London</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="rome">
+          <div>
+            <h2>Rome</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+      </section>
+      <footer>
+      Coded and designed by <a href="https://www.linkedin.com/in/saffron-williamson/" target="_blank">Saffron Williamson</a>
+    </footer>
+    </div>
+    
+    <script src="./worldClock.js"></script>
+  </body>
+</html>
