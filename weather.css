@@ -89,8 +89,8 @@ main {
 }
 
 .weather-app-city {
-  margin: 0;
-  font-size: 38px;
+  margin-top: 10px;
+  font-size: 50px;
   line-height: 48px;
 }
 
@@ -163,6 +163,14 @@ footer a {
     padding: 20px;
   }
 
+  main {
+    padding-top: 0px;
+  }
+
+  header {
+    padding-bottom: 10px;
+  }
+
   .weather-forecast-day:nth-child(5) {
     display: none;
   }
@@ -176,7 +184,6 @@ footer a {
   .weather-app-temp-container {
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
   }
 
   .search-form-input {
