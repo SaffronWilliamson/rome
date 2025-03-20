@@ -288,7 +288,7 @@ a {
   }
   .itinerary-content {
     display: inline-block;
-    position: relative; /* Ensure positioning is relative to its normal position */
-    top: -50px; /* Move it 20px upwards (adjust as necessary) */
+    position: relative; 
+    top: -30px;
   }
 }
