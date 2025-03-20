@@ -240,4 +240,10 @@ a {
     font-size: 14px; /* Reduce font size */
     padding: 6px 40px; /* Adjust padding */
   }
+  .itinerary-1 {
+    font-size: 12px;
+  }
+  .itinerary-2 {
+    font-size: 12px;
+  }
 }
