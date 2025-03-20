@@ -143,7 +143,7 @@ a {
 
 .fa-arrow-up {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   letter-spacing: 3px;
 }
 
@@ -157,7 +157,6 @@ a {
   font-size: 20px; /* Set font size */
   letter-spacing: 5px; /* Increase letter spacing */
 }
-
 
 /* Day 1 section styles */
 .day-1-section {
@@ -288,8 +287,8 @@ a {
     line-height: 22px;
   }
   .itinerary-content {
-  display: inline-block;
-  position: relative;  /* Ensure positioning is relative to its normal position */
-  top: -50px;  /* Move it 20px upwards (adjust as necessary) */
-}
+    display: inline-block;
+    position: relative; /* Ensure positioning is relative to its normal position */
+    top: -50px; /* Move it 20px upwards (adjust as necessary) */
+  }
 }
