@@ -158,6 +158,7 @@ a {
   letter-spacing: 5px; /* Increase letter spacing */
 }
 
+
 /* Day 1 section styles */
 .day-1-section {
   position: relative; /* Keep it in normal flow */
@@ -286,4 +287,9 @@ a {
     font-size: 12px;
     line-height: 22px;
   }
+  .itinerary-content {
+  display: inline-block;
+  position: relative;  /* Ensure positioning is relative to its normal position */
+  top: -50px;  /* Move it 20px upwards (adjust as necessary) */
+}
 }
