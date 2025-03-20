@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | Find Your City's Forecast</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./weather.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8cf076e0a8.js"
+      crossorigin="anonymous"
+    ></script>
+    
+
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="return-home">
+        <a href="./index.html"
+          ><i class="fa-solid fa-house fa-bounce"></i></a
+        >
+      </div>
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <div id="time"></div>
+              <div>Condition: <span id="description"></span></div>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temp-container">
+            <div id="icon"></div>
+            <div class="weather-app-temp" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <footer>
+        Coded and designed by <a href="https://www.linkedin.com/in/saffron-williamson/">Saffron Williamson</a>
+      </footer>
+    </div>
+    <script src="./weather.js"></script>
+  </body>
+</html>
