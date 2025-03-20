@@ -236,6 +236,12 @@ a {
   .hero-section {
     padding: 8% 5%; /* Reduce padding */
   }
+  .hero-heading-typography {
+    margin-top: 10px;
+  }
+  .hero-button-container {
+    margin-bottom: 0;
+  }
   .btn {
     font-size: 14px; /* Reduce font size */
     padding: 6px 40px; /* Adjust padding */
