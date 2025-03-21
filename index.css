@@ -311,6 +311,8 @@ a {
 footer {
   font-size: 10px;
   margin-top: 90px;
+  padding-top: 5px;
+  border-top: 0.5px black solid;
 }
 
 footer a {

@@ -22,7 +22,7 @@ i {
   display: flex;
   justify-content: center; /* Centers horizontally */
 }
-.piazza-navona-sketch {
+.pantheon-sketch {
   width: 90%;
   max-width: 900px;
 }
@@ -49,6 +49,7 @@ h1 {
     margin-top:5px;
     margin-bottom: 0px;
 }
+
 .contents ul {
     margin-top: 0px;
 }
