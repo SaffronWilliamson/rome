@@ -22,7 +22,7 @@ i {
   display: flex;
   justify-content: center; /* Centers horizontally */
 }
-.treviFountain-sketch {
+.sketch {
   width: 90%;
   max-width: 900px;
 }
