@@ -21,6 +21,7 @@ i {
 .header-img {
   display: flex;
   justify-content: center; /* Centers horizontally */
+  padding-left: 25px;
 }
 .sketch {
   width: 90%;
@@ -37,27 +38,27 @@ h1 {
   justify-content: center;
 }
 .contents {
- width: 90%;
+  width: 90%;
   max-width: 850px;
 }
 .contents h3 {
- margin-bottom: 5px;
- margin-top: 40px;
- letter-spacing: 2px;
+  margin-bottom: 5px;
+  margin-top: 40px;
+  letter-spacing: 2px;
 }
 .contents p {
-    margin-top:5px;
-    margin-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .contents ul {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 .contents li {
-    padding: 3px;
+  padding: 3px;
 }
 .contents em {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 footer {
@@ -76,7 +77,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 
 @media (max-width: 860px) {
   h1 {
