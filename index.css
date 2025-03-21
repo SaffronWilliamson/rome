@@ -1,7 +1,6 @@
 /* Define CSS variables for better consistency */
 :root {
   --primary-font: 'GFS Didot', serif; /* Primary font */
-  --background-color: #f8f9fa; /* Background color for the page */
   --button-bg: white; /* Default button background */
   --button-hover-bg: #bfb8b3; /* Button background on hover */
   --button-text: black; /* Default button text color */
