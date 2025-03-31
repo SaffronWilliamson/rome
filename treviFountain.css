@@ -21,7 +21,7 @@ i {
 .header-img {
   display: flex;
   justify-content: center; /* Centers horizontally */
-  padding-left: 25px;
+  padding-left: 10px;
 }
 .sketch {
   width: 90%;
