@@ -29,7 +29,8 @@ i {
 
 h1 {
   text-align: center;
-  letter-spacing: 35px;
+  letter-spacing: 15px;
+  font-size: 25px;
 }
 
 .info {
@@ -49,6 +50,7 @@ h1 {
   margin-top: 5px;
   margin-bottom: 0px;
 }
+
 .contents ul {
   margin-top: 0px;
 }
@@ -58,10 +60,9 @@ h1 {
 .contents em {
   font-weight: bold;
 }
-
 .secondary-list {
-  list-style: none;
-  padding-left: 0;
+    list-style-type:none;
+    padding-left: 0;
 }
 
 footer {
@@ -81,9 +82,15 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 910px) {
   h1 {
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 10px;
+  }
+}
+@media (max-width: 670px) {
+  h1 {
+    font-size: 15px;
+    letter-spacing: 7px;
   }
 }

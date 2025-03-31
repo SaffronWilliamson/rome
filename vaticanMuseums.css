@@ -49,6 +49,7 @@ h1 {
   margin-top: 5px;
   margin-bottom: 0px;
 }
+
 .contents ul {
   margin-top: 0px;
 }
@@ -57,11 +58,6 @@ h1 {
 }
 .contents em {
   font-weight: bold;
-}
-
-.secondary-list {
-  list-style: none;
-  padding-left: 0;
 }
 
 footer {
@@ -81,9 +77,21 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   h1 {
-    font-size: 24px;
+    font-size: 30px;
+    letter-spacing: 20px;
+  }
+}
+@media (max-width: 610px) {
+  h1 {
+    font-size: 25px;
     letter-spacing: 10px;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+    letter-spacing: 7px;
   }
 }
